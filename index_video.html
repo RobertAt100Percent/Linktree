@@ -40,6 +40,49 @@ File Description : BG Video HTML Template -->
 
         <!-- Custom colours here - options can be found in the colour folder - Replace the current "color.css" below -->
         <link rel="stylesheet" type="text/css" href="css/colors/video-mode.css">
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            body {
+              margin: 0;
+              font-family: Arial;
+              font-size: 17px;
+            }
+            
+            #myVideo {
+              position: fixed;
+              right: 0;
+              bottom: 0;
+              min-width: 100%; 
+              min-height: 100%;
+            }
+            
+            .content {
+              position: fixed;
+              bottom: 0;
+              background: rgba(0, 0, 0, 0.5);
+              color: #f1f1f1;
+              width: 100%;
+              padding: 20px;
+            }
+            
+            #myBtn {
+              width: 200px;
+              font-size: 18px;
+              padding: 10px;
+              border: none;
+              background: #000;
+              color: #fff;
+              cursor: pointer;
+            }
+            
+            #myBtn:hover {
+              background: #ddd;
+              color: black;
+            }
+            </style>
     </head>
 
     <body>
@@ -55,7 +98,7 @@ File Description : BG Video HTML Template -->
         <!-- Background Video Player --------------------------------------------------------------------------------------
         The parameters of the playback are specified in the line below, IE:
         Autoplay starts the video automatically, Loop, muted, etc -------------------------------------------------------->
-        <video autoplay loop muted playsinline class="bg-video">
+        <video autoplay loop muted playsinline class="bg-video" id="myVideo">
             
             <!-- Change your video here - (Make sure the video is placed inside the "images" folder) -->
             <!-- replace the src="your video here" with the actual video path  -->
@@ -93,7 +136,7 @@ File Description : BG Video HTML Template -->
 
             <!-- Button #4 - replace the "#" with the actual link as well as the text of the button #4 here -->
             <div class="mt-3 pt-3">
-                <a href="index_round_dark.html" style="width: 100%" class="btn btn-round btn-custom">Dark Mode Preview Here <i class="mdi mdi-theme-light-dark"></i></a>
+                <a href="index.html" style="width: 100%" class="btn btn-round btn-custom">Dark Mode Preview Here <i class="mdi mdi-theme-light-dark"></i></a>
             </div>
 
             <div class="mt-3 pt-3">
@@ -105,6 +148,7 @@ File Description : BG Video HTML Template -->
                 <a href="https://jorgeperez.gumroad.com/l/Tree-link" style="width: 100%" class="btn btn-round btn-custom">Buy This HTML Template Here <i class="mdi mdi-shopping"></i></a>
             </div>
 
+            <button id="myBtn" onclick="myFunction()">Pause</button>
 
             <!-- Social media list/icons here: ------------------------------------------------------------------------------------->
             <!-- Simply comment or uncomment the ones you would like to use/hide -->
@@ -197,6 +241,20 @@ File Description : BG Video HTML Template -->
                 // Do you want to loop the effect? If yes type "true" if not then "false":
                 loop: true
             });
+
+            //pause the video in the background
+            var video = document.getElementById("myVideo");
+            var btn = document.getElementById("myBtn");
+
+            function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+            }            
         </script>
 
         <!-- Global site tag (gtag.js) - Google Analytics here -->

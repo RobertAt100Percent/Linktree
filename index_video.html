@@ -1,14 +1,10 @@
 
 
-<!--
-Template Name    : Treelink, mobile page for links.
-Author           : Robert Daniels
-Version          : 1.0.3
-Updated          : May 30
-File Description : Link tree HTML Template 
-References       : o https://www.jperez.ca/blog/treelink-a-responsive-bootstrap-5-mobile-template-for-social-media/ 
-                   o https://treelink.jperez.ca/index_round_dark.html#
--->
+<!-- Template Name   : Treelink, mobile page for links.
+Author           : Jorge Perez
+Version          : 1.0.4
+Updated          : April 2023
+File Description : BG Video HTML Template -->
 
 <!DOCTYPE html>
 <html>
@@ -17,7 +13,7 @@ References       : o https://www.jperez.ca/blog/treelink-a-responsive-bootstrap-
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Title of your site here -->
-        <title>TreeLink: Robert Daniels Jr Websites</title>
+        <title>TreeLink: A Responsive Static HTML5 Template</title>
 
         <!-- Description of your site here -->
         <meta name="description" content="A Bootstrap 5 mobile template for you links & social media apps." />
@@ -26,36 +22,46 @@ References       : o https://www.jperez.ca/blog/treelink-a-responsive-bootstrap-
         <meta name="keywords" content="add your keywords here" />
 
         <!-- Author's name here -->
-        <meta name="author" content="Robert Daniels Jr" />
+        <meta name="author" content="Jorge Perez" />
 
         <!-- Change your favicon image here - (Make sure the photo is placed inside the "images" folder) -->
         <link rel="shortcut icon" href="/images/batman.jpg">
 
         <!-- Bootstrap Css -->
-        <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
-
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <!-- Materialdesign icons Css -->
-        <link rel="stylesheet" type="text/css" href="CSS/materialdesignicons.min.css">
+        <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css">
         <!-- Animate Css -->
-        <link rel="stylesheet" type="text/css" href="CSS/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.min.css">
         <!-- Mobirise icons Css -->
-        <link rel="stylesheet" type="text/css" href="CSS/mobiriseicons.css"> 
+        <link rel="stylesheet" type="text/css" href="css/mobiriseicons.css"> 
         <!-- Custom Style -->
-        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 
         <!-- Custom colours here - options can be found in the colour folder - Replace the current "color.css" below -->
-        <link rel="stylesheet" type="text/css" href="CSS/colors/dark-mode.css">
+        <link rel="stylesheet" type="text/css" href="css/colors/video-mode.css">
     </head>
 
     <body>
 
-        <!-- Loader/Spinner -->
+        <!-- Loader/Spinner ---------------------------------------------------------------------------------------------->
         <div id="preloader">
             <div id="status">
                 <div class="spinner">Loading...</div>
             </div>
         </div>
 
+
+        <!-- Background Video Player --------------------------------------------------------------------------------------
+        The parameters of the playback are specified in the line below, IE:
+        Autoplay starts the video automatically, Loop, muted, etc -------------------------------------------------------->
+        <video autoplay loop muted playsinline class="bg-video">
+            
+            <!-- Change your video here - (Make sure the video is placed inside the "images" folder) -->
+            <!-- replace the src="your video here" with the actual video path  -->
+            <source src="images/gradient.mp4" type="video/mp4" />
+
+        </video>
 
         <!-- Header Info/Container ----------------------------------------------------------------------------------------->
         <div class="container">
@@ -76,26 +82,22 @@ References       : o https://www.jperez.ca/blog/treelink-a-responsive-bootstrap-
             </div>
             
 
-            <!-- Change the main button description info, add or remove buttons here ------------------------------------>
-
-            <!-- Button #1 - replace the "#" with the actual link as well as the text of the button #1 here -->
-            <div class="mt-3 pt-2">
-                <a href="#" style="width: 100%" class="btn btn-round btn-custom">Website <i class="mdi mdi-laptop-mac"></i></a>
-            </div>
-
-            <!-- Button #2 - replace the "#" with the actual link as well as the text of the button #2 here -->
             <div class="mt-3 pt-3">
-                <a href="contact_round_dark.html" style="width: 100%" class="btn btn-round btn-custom">Included Contact Form <i class="mdi mdi-email"></i></a>
+                <a href="contact_video.html" style="width: 100%" class="btn btn-round btn-custom">Included Contact Form <i class="mdi mdi-email"></i></a>
             </div>
 
             <!-- Button #3 - replace the "#" with the actual link as well as the text of the button #3 here -->
             <div class="mt-3 pt-3">
-                <a href="index_square_dark.html" style="width: 100%" class="btn btn-round btn-custom">Square Button Preview Here <i class="mdi mdi-crop-square"></i></a> 
+                <a href="index_square.html" style="width: 100%" class="btn btn-round btn-custom">Square Button Preview Here <i class="mdi mdi-crop-square"></i></a> 
             </div>
 
             <!-- Button #4 - replace the "#" with the actual link as well as the text of the button #4 here -->
             <div class="mt-3 pt-3">
-                <a href="index_light.html" style="width: 100%" class="btn btn-round btn-custom">Light Mode Preview Here <i class="mdi mdi-theme-light-dark"></i></a>
+                <a href="index_round_dark.html" style="width: 100%" class="btn btn-round btn-custom">Dark Mode Preview Here <i class="mdi mdi-theme-light-dark"></i></a>
+            </div>
+
+            <div class="mt-3 pt-3">
+                <a href="index.html" style="width: 100%" class="btn btn-round btn-custom">Round Button Preview Here <i class="mdi mdi-checkbox-blank-circle-outline"></i></a> 
             </div>
 
             <!-- Button #4 - replace the "#" with the actual link as well as the text of the button #4 here -->
@@ -103,10 +105,6 @@ References       : o https://www.jperez.ca/blog/treelink-a-responsive-bootstrap-
                 <a href="https://jorgeperez.gumroad.com/l/Tree-link" style="width: 100%" class="btn btn-round btn-custom">Buy This HTML Template Here <i class="mdi mdi-shopping"></i></a>
             </div>
 
-            <!-- Button #4 - replace the "#" with the actual link as well as the text of the button #4 here -->
-            <div class="mt-3 pt-3">
-                <a href="https://jorgeperez.gumroad.com/l/Tree-link" style="width: 100%" class="btn btn-round btn-custom">Buy This HTML Template Here <i class="mdi mdi-shopping"></i></a>
-            </div>
 
             <!-- Social media list/icons here: ------------------------------------------------------------------------------------->
             <!-- Simply comment or uncomment the ones you would like to use/hide -->
@@ -128,7 +126,7 @@ References       : o https://www.jperez.ca/blog/treelink-a-responsive-bootstrap-
                     <li class="list-inline-item"><a href="#" target="_blank"><i class="mdi mdi-facebook"></i></a></li>
 
                     <!-- Email Icon -->
-                    <li class="list-inline-item"><a href="contact_round_dark.html" target="_blank"><i class="mdi mdi-email"></i></a></li>
+                    <li class="list-inline-item"><a href="contact_video.html" target="_blank"><i class="mdi mdi-email"></i></a></li>
 
                     <!-- Vimeo Icon -->
                     <!-- <li class="list-inline-item"><a href="#" target="_blank"><i class="mdi mdi-vimeo"></i></a></li> -->
@@ -162,24 +160,24 @@ References       : o https://www.jperez.ca/blog/treelink-a-responsive-bootstrap-
                 <div class="mb-4 text-center footer-alt">
 
                     <!-- Replace the text of the footer here -->
-                    <p class="copyright_content mb-6 mt-4">© 2022 - Bruce Wayne</p>
+                    <p class="copyright_content mb-6 mt-4">© 2023 - Bruce Wayne</p>
                 </div>
             </div>
         </div>
 
 
         <!--All Javascript ------------------------------------------------------------------------------------------------------>
-        <script src="JS/bootstrap.bundle.min.js"></script>
-        <script src="JS/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.min.js"></script>
 
         <!-- Contact Js -->
-        <script src="JS/contact.js"></script>
+        <script src="js/contact.js"></script>
         
         <!-- Text Type -->
-        <script src="JS/typed.js"></script>
+        <script src="js/typed.js"></script>
 
         <!-- Custom Js -->
-        <script src="JS/custom.js"></script>
+        <script src="js/custom.js"></script>
         <script>
             var typed = new Typed('.element', {
 

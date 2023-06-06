@@ -223,7 +223,7 @@ h6 {
     transition: all 0.5s;
 }
 
-.aboutMe{
+#aboutMe{
     color: black;
     text-align: justify;
 }

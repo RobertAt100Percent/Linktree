@@ -199,7 +199,7 @@ References       : o https://www.jperez.ca/blog/treelink-a-responsive-bootstrap-
                 <div class="mb-4 text-center footer-alt">
 
                     <!-- Replace the text of the footer here -->
-                    <p class="copyright_content mb-6 mt-4">© 2023 - Robert Daniels Jr</p>
+                    <p class="copyright_content mb-6 mt-4" id="FooterText">© 2023 - Robert Daniels Jr</p>
                 </div>
             </div>
         </div>
@@ -247,10 +247,13 @@ References       : o https://www.jperez.ca/blog/treelink-a-responsive-bootstrap-
                     let AboutMeText = document.getElementById("aboutMe");
                     let MovingWordsText = document.getElementById("MovingWords");
                     let headerNameText = document.getElementById("headerName");
+                    let FooterText = document.getElementById("FooterText");
+                    
                     if (el.href.match("./CSS/colors/light-mode.css")) {
                         AboutMeText.style.color = 'aliceblue';
                         MovingWordsText.style.color = 'aliceblue';
                         headerNameText.style.color = 'aliceblue';
+                        FooterText.style.color = 'aliceblue';
                         el.href = "./CSS/colors/dark-mode.css";    
                     }
                     else {
@@ -258,6 +261,7 @@ References       : o https://www.jperez.ca/blog/treelink-a-responsive-bootstrap-
                         AboutMeText.style.color = 'black';
                         MovingWordsText.style.color = 'black';
                         headerNameText.style.color = 'black';
+                        FooterText.style.color = 'black';
                         }
                     }
                 </script>

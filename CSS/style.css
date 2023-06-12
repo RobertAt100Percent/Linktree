@@ -239,3 +239,9 @@ h6 {
     color: black;
     text-align: center;
 }
+
+/* this is to make the small arrow button on the bottom float to the right */
+.GoRight{
+    float: right;
+    /* background-color/:; */
+}

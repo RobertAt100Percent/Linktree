@@ -3,7 +3,8 @@
 * Author           : Jorge Perez
 * Version          : 2.0.0
 * Updated          : June 2023
-* File Description : Main JavaScript file ----------------------------------- */
+* File Description : Main JavaScript file ----------------------------------- 
+*/
 
 ! function($) {
     "use strict";
